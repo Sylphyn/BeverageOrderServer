@@ -8,10 +8,18 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.namhuan.beverageorderserver.Model.Category;
+import com.example.namhuan.beverageorderserver.ViewHolder.MenuViewHolder;
+import com.firebase.ui.database.FirebaseRecyclerAdapter;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class MainActivity extends AppCompatActivity {
 
     Button btnSignIn;
     TextView txtSlogan;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
