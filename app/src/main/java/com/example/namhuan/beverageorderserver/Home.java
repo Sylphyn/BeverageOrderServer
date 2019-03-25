@@ -290,6 +290,10 @@ public class Home extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
+        if (id == R.id.nav_order){
+            Intent orders = new Intent(Home.this, OrderStatus.class);
+            startActivity(orders);
+        }
 
 
 
